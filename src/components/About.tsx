@@ -45,16 +45,8 @@ const About = () => {
                 </div>
                 <div className="text-black mb-1">
                   {language === "mn"
-                    ? "Хийж гүйцэтгэх хугацаа: ажлын 2 - 3 хоног"
-                    : "Development time: 2-3 business days"}
-                </div>
-                <div className="text-black mb-1">
-                  {language === "mn"
-                    ? "Удирдлага: Сайтын агуулгаа засах боломжтой"
-                    : "Management: Editable site content"}
-                </div>
-                <div className="text-black">
-                  {language === "mn" ? "Баталгаат хугацаа: ∞ " : "Warranty: ∞"}
+                    ? "Хийж гүйцэтгэх хугацаа: ажлын 3 - 5 хоног"
+                    : "Development time: 3-5 business days"}
                 </div>
                 <div className="text-xs text-gray-500 mt-2">
                   {language === "mn"
@@ -81,16 +73,8 @@ const About = () => {
                 </div>
                 <div className="text-black mb-1">
                   {language === "mn"
-                    ? "Хийж гүйцэтгэх хугацаа: ажлын 3 - 5 хоног"
-                    : "Development time: 3-5 business days"}
-                </div>
-                <div className="text-black mb-1">
-                  {language === "mn"
-                    ? "Удирдлага: Сайтын агуулгаа удирдах боломжтой"
-                    : "Management: Full site content control"}
-                </div>
-                <div className="text-black">
-                  {language === "mn" ? "Баталгаат хугацаа: ∞ " : "Warranty: ∞"}
+                    ? "Хийж гүйцэтгэх хугацаа: ажлын 5 - 8 хоног"
+                    : "Development time: 5-8 business days"}
                 </div>
                 <div className="text-xs text-gray-500 mt-2">
                   {language === "mn"
@@ -117,16 +101,8 @@ const About = () => {
                 </div>
                 <div className="text-black mb-1">
                   {language === "mn"
-                    ? "Хийж гүйцэтгэх хугацаа: ажлын 10 - 12 хоног"
-                    : "Development time: 10-12 business days"}
-                </div>
-                <div className="text-black mb-1">
-                  {language === "mn"
-                    ? "Удирдлага: Сайтын агуулгаа удирдах боломжтой"
-                    : "Management: Full site content control"}
-                </div>
-                <div className="text-black">
-                  {language === "mn" ? "Баталгаат хугацаа: ∞ " : "Warranty: ∞"}
+                    ? "Хийж гүйцэтгэх хугацаа: ажлын 14 хоног"
+                    : "Development time: 14 business days"}
                 </div>
                 <div className="text-xs text-gray-500 mt-2">
                   {language === "mn"
@@ -153,16 +129,8 @@ const About = () => {
                 </div>
                 <div className="text-black mb-1">
                   {language === "mn"
-                    ? "Хийж гүйцэтгэх хугацаа: ажлын 12 - 14 хоног"
-                    : "Development time: 12-14 business days"}
-                </div>
-                <div className="text-black mb-1">
-                  {language === "mn"
-                    ? "Удирдлага: Сайтын агуулгаа удирдана"
-                    : "Management: Full site content control"}
-                </div>
-                <div className="text-black">
-                  {language === "mn" ? "Баталгаат хугацаа: ∞ " : "Warranty: ∞"}
+                    ? "Хийж гүйцэтгэх хугацаа: ажлын 14 - 28 хоног"
+                    : "Development time: 14-28 business days"}
                 </div>
                 <div className="text-xs text-gray-500 mt-2">
                   {language === "mn"
@@ -189,16 +157,8 @@ const About = () => {
                 </div>
                 <div className="text-black mb-1">
                   {language === "mn"
-                    ? "Хийж гүйцэтгэх хугацаа: ажлын 25 - 30 хоног"
-                    : "Development time: 25-30 business days"}
-                </div>
-                <div className="text-black mb-1">
-                  {language === "mn"
-                    ? "Удирдлага: Сайтын агуулгаа удирдана"
-                    : "Management: Full site content control"}
-                </div>
-                <div className="text-black">
-                  {language === "mn" ? "Баталгаат хугацаа: ∞ " : "Warranty: ∞"}
+                    ? "Хийж гүйцэтгэх хугацаа: ажлын 30 хоног"
+                    : "Development time: 30 business days"}
                 </div>
                 <div className="text-xs text-gray-500 mt-2">
                   {language === "mn"
@@ -224,14 +184,6 @@ const About = () => {
                 <div className="text-black mb-1">
                   {language === "mn" ? "Хийж гүйцэтгэх хугацаа: ?" : "Development time: ?"}
                 </div>
-                <div className="text-black mb-1">
-                  {language === "mn"
-                    ? "Удирдлага: Сайтын агуулгаа удирдана"
-                    : "Management: Full site content control"}
-                </div>
-                <div className="text-black">
-                  {language === "mn" ? "Баталгаат хугацаа: ∞ " : "Warranty: ∞"}
-                </div>
                 <div className="text-xs text-gray-500 mt-2">
                   {language === "mn"
                     ? "Нэмэлт мэдээлэл: Тусгай функц, дизайн, интеграци, API, enterprise шийдэл, зөвлөгөө өгөх үйлчилгээ."
@@ -239,75 +191,12 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Нэмэлт төрөлүүд */}
-              <div className="border border-black rounded-xl p-4 bg-white mt-8">
-                <h5 className="font-bold text-xl mb-3 text-black">
-                  Нэмэлт вэб сайт төрлүүд
-                </h5>
+              {/* Нэмэлт төрөлүүд хэсэг түр хасагдсан */}
 
-                <div className="mb-4">
-                  <div className="font-semibold text-lg text-black">
-                    Блог/Мэдээ мэдээллийн сайт
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Мэдээ, нийтлэл, нийтлэг блог функцтэй. Олон нийттэй харилцах,
-                    сэтгэгдэл үлдээх боломжтой.
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Нэмэлт мэдээлэл: олон хэлний дэмжлэг, SEO оптимизаци, нийгмийн
-                    сүлжээтэй холболт.
-                  </div>
-                  <div className="text-black">
-                    Үнэ, хугацаа: 1,000,000₮ – 1,500,000₮, 5-7 хоног
-                  </div>
-                </div>
+              {/* Mission & Vision хэсгийг хассан */}
 
-                <div className="mb-4">
-                  <div className="font-semibold text-lg text-black">
-                    Үйлчилгээний захиалгын сайт
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Онлайн үйлчилгээний бүртгэл, захиалга хийх системтэй. Жишээ нь:
-                    засвар үйлчилгээ, эрүүл мэндийн үйлчилгээ, сургалт.
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Нэмэлт мэдээлэл: төлбөрийн систем нэмж болно.
-                  </div>
-                  <div className="text-black">Үнэ: 2,000,000₮ – 3,000,000₮, 10-14 хоног</div>
-                </div>
-
-                <div className="mb-4">
-                  <div className="font-semibold text-lg text-black">
-                    Нийгмийн сүлжээ, форум
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Хэрэглэгчид хоорондоо харилцах, пост бичих, сэтгэгдэл үлдээх
-                    боломжтой.
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Нэмэлт мэдээлэл: хэрэглэгчийн удирдлага, модераци.
-                  </div>
-                  <div className="text-black">Үнэ: 3,000,000₮ ба түүнээс дээш, хугацаа хамаарч</div>
-                </div>
-
-                <div>
-                  <div className="font-semibold text-lg text-black">
-                    Корпоратив ERP системийн вэб интерфейс
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Аж ахуйн нэгжийн дотоод нөөцийн удирдлагын систем.
-                  </div>
-                  <div className="text-gray-700 mb-1">
-                    Нэмэлт мэдээлэл: санхүү, хүний нөөц, борлуулалт зэрэг модулиудтай.
-                  </div>
-                  <div className="text-black">Үнэ: Тусгай тооцоо, захиалгат хөгжүүлэлттэй</div>
-                </div>
-              </div>
+              {/* Values хэсгийг хассан */}
             </div>
-
-            {/* Mission & Vision хэсгийг хассан */}
-
-            {/* Values хэсгийг хассан */}
           </div>
         </div>
       </div>

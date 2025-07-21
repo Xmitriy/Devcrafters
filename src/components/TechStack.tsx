@@ -1,84 +1,8 @@
 import React from 'react';
-import { Code, Database, Cloud, Palette, Smartphone, Zap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const TechStack = () => {
   const { language } = useLanguage();
-
-  const technologies = [
-    {
-      category: "Frontend",
-      icon: <Code className="h-8 w-8" />,
-      color: "from-blue-500 to-indigo-600",
-      techs: [
-        { name: "React", description: "Орчин үеийн UI хөгжүүлэлтийн сан" },
-        { name: "Next.js", description: "React суурьтай, продакшнд бэлэн вэб фреймворк" },
-        { name: "Vue.js", description: "Прогрессив JavaScript фреймворк" },
-        { name: "TypeScript", description: "JavaScript-ийн төрөлжүүлсэн хувилбар" },
-        { name: "Tailwind CSS", description: "Utility-first CSS framework" }
-      ]
-    },
-    {
-      category: "Backend",
-      icon: <Database className="h-8 w-8" />,
-      color: "from-green-500 to-emerald-600",
-      techs: [
-        { name: "Node.js", description: "Өргөтгөх боломжтой серверийн runtime" },
-        { name: "Python", description: "Уян хатан програмчлалын хэл" },
-        { name: "Django", description: "Python суурьтай вэб фреймворк" },
-        { name: "PostgreSQL", description: "Дэвшилтэт реляц өгөгдлийн сан" },
-        { name: "MongoDB", description: "NoSQL баримт бичгийн өгөгдлийн сан" }
-      ]
-    },
-    {
-      category: "Cloud & DevOps",
-      icon: <Cloud className="h-8 w-8" />,
-      color: "from-purple-500 to-violet-600",
-      techs: [
-        { name: "AWS", description: "Amazon Web Services үүлэн платформ" },
-        { name: "Docker", description: "Контейнержуулах платформ" },
-        { name: "Kubernetes", description: "Контейнер зохион байгуулалт" },
-        { name: "CI/CD", description: "Тасралтгүй интеграци ба хүргэлт" },
-        { name: "Vercel", description: "Орчин үеийн вэб апп-д зориулсан байршуулалтын платформ" }
-      ]
-    },
-    {
-      category: "Дизайн",
-      icon: <Palette className="h-8 w-8" />,
-      color: "from-pink-500 to-rose-600",
-      techs: [
-        { name: "Figma", description: "UI/UX дизайн хамтын ажиллагааны хэрэгсэл" },
-        { name: "Adobe XD", description: "Вектор суурьтай дизайн хэрэгсэл" },
-        { name: "Framer Motion", description: "React-д зориулсан анимацын сан" },
-        { name: "GSAP", description: "Мэргэжлийн анимацын сан" },
-        { name: "Lottie", description: "Вэб болон мобайлд зориулсан анимацын формат" }
-      ]
-    },
-    {
-      category: "Мобайл",
-      icon: <Smartphone className="h-8 w-8" />,
-      color: "from-orange-500 to-red-600",
-      techs: [
-        { name: "React Native", description: "Олон платформд зориулсан мобайл хөгжүүлэлт" },
-        { name: "Flutter", description: "Google-ийн мобайл UI toolkit" },
-        { name: "PWA", description: "Прогрессив вэб аппликэйшн" },
-        { name: "Ionic", description: "Холимог мобайл апп хөгжүүлэлт" },
-        { name: "Expo", description: "Универсал React апп-д зориулсан платформ" }
-      ]
-    },
-    {
-      category: "Хэрэгсэлүүд",
-      icon: <Zap className="h-8 w-8" />,
-      color: "from-yellow-500 to-amber-600",
-      techs: [
-        { name: "Git", description: "Хувилбарын удирдлагын систем" },
-        { name: "Webpack", description: "Модул багцлагч" },
-        { name: "Vite", description: "Хурдан build tool" },
-        { name: "ESLint", description: "JavaScript код шалгагч" },
-        { name: "Prettier", description: "Код форматлагч" }
-      ]
-    }
-  ];
 
   return (
     <section className="py-20 bg-white">
@@ -94,41 +18,34 @@ const TechStack = () => {
             </p>
           </div>
 
-          {/* Tech Categories */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {technologies.map((category, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-2xl p-6 border border-black hover:bg-gray-50 transition-all duration-200 group"
-              >
-                {/* Category Header */}
-                <div className="flex items-center mb-6">
-                  <div className="p-3 rounded-xl bg-white border border-black mr-4">
-                    <div className="text-black">
-                      {category.icon}
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-black">
-                    {category.category}
-                  </h3>
-                </div>
-
-                {/* Technologies List */}
-                <div className="space-y-4">
-                  {category.techs.map((tech, techIndex) => (
-                    <div key={techIndex}>
-                      <div className="flex items-start">
-                        <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <div>
-                          <h4 className="font-semibold text-black">
-                            {tech.name}
-                          </h4>
-                          {/* tailbar hasagdsan */}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+          {/* Tech Logos */}
+          <div className="flex flex-wrap gap-5 items-center justify-center mb-8">
+            {[
+              { name: "React", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="h-12 w-12" /> },
+              { name: "Next.js", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="h-12 w-12 bg-white rounded" /> },
+              { name: "Vue.js", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" className="h-12 w-12" /> },
+              { name: "TypeScript", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="h-12 w-12" /> },
+              { name: "Tailwind CSS", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="h-12 w-12" /> },
+              { name: "Node.js", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="h-12 w-12" /> },
+              { name: "Python", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="h-12 w-12" /> },
+              { name: "Django", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" className="h-12 w-12 bg-white rounded" /> },
+              { name: "PostgreSQL", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="h-12 w-12" /> },
+              { name: "MongoDB", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="h-12 w-12" /> },
+              { name: "Docker", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="h-12 w-12" /> },
+              { name: "Kubernetes", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="h-12 w-12" /> },
+              { name: "CI/CD", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-plain.svg" alt="CI/CD" className="h-12 w-12" /> },
+              { name: "Vercel", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" alt="Vercel" className="h-12 w-12 bg-white rounded" /> },
+              { name: "Figma", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="h-12 w-12" /> },
+              { name: "Adobe XD", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD" className="h-12 w-12" /> },
+              { name: "Ionic", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg" alt="Ionic" className="h-12 w-12" /> },
+              { name: "Expo", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/expo/expo-original.svg" alt="Expo" className="h-12 w-12 bg-white rounded" /> },
+              { name: "Git", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="h-12 w-12" /> },
+              { name: "Webpack", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack" className="h-12 w-12" /> },
+              { name: "Vite", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite" className="h-12 w-12" /> },
+              { name: "ESLint", icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" alt="ESLint" className="h-12 w-12" /> }
+            ].map((tech, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                {tech.icon}
               </div>
             ))}
           </div>

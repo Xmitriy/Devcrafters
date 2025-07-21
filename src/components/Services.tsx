@@ -115,15 +115,15 @@ const Services = () => {
   const serviceList = services[language];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="pt-0 pb-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          <div className="text-center mb-0">
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-0">
               {t.header} <span className="text-black border-b-2 border-black pb-1">{t.highlight}</span>
             </h2>
-            <p className="text-xl text-black max-w-3xl mx-auto">
+            <p className="text-xl text-black max-w-3xl mx-auto mt-1 mb-2">
               {t.description}
             </p>
           </div>

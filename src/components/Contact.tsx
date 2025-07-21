@@ -197,7 +197,7 @@ const Contact = () => {
                 <div className="flex items-center">
                   <Phone className="h-6 w-6 text-accent-600 mr-4" />
                   <span className="text-gray-700">
-                    +976 85004648
+                    +976 85004648, 95563002
                   </span>
                 </div>
                 <div className="flex items-center">

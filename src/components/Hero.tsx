@@ -16,7 +16,7 @@ const Hero = () => {
   const content = {
     mn: {
       welcome: 'Вэб хөгжүүлэлтийн ирээдүйд тавтай морил',
-      heading: <><span className="text-accent-600">DevCrafters</span> руу тавтай морил</>,
+      heading: <><span className="text-accent-600 font-serif">DevCrafters-д</span> тавтай морил</>,
       subtitle: 'Бид бизнесүүдэд зориулсан хурдан, орчин үеийн вэб сайт болон вэб аппликэйшн бүтээдэг',
       features: [
         { icon: <Code className="h-6 w-6 text-accent-600" />, label: 'Орчин үеийн код' },
@@ -27,7 +27,7 @@ const Hero = () => {
     },
     en: {
       welcome: 'Welcome to the future of web development',
-      heading: <><span className="text-accent-600">Welcome to</span> DevCrafters</>,
+      heading: <><span className="text-accent-600 font-serif">Welcome to</span> DevCrafters</>,
       subtitle: 'We build fast, modern websites and web applications for businesses.',
       features: [
         { icon: <Code className="h-6 w-6 text-accent-600" />, label: 'Modern Code' },
